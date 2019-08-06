@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>My8</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/src/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/assets/css/style.css">
+    <link rel="stylesheet" href="/dist/main.css">
+</head>
+
+<body>
+    <div id="app"></div>
+    <script type="text/javascript" src="/dist/vendors.js"></script>
+    <script type="text/javascript" src="/dist/main.js"></script>
+    <script src="/src/assets/js/jquery.min.js"></script>
+    <script src="/src/assets/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/moment.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script>
+    <script>
+        tinymce.init({
+            selector: '#mytextarea',
+            plugins: "save",
+            toolbar: "save",
+            schema: 'html5',
+            formats: {
+                alignleft: {
+                    selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img',
+                    classes: 'left'
+                },
+                aligncenter: {
+                    selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img',
+                    classes: 'center'
+                },
+                alignright: {
+                    selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img',
+                    classes: 'right'
+                },
+                alignjustify: {
+                    selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img',
+                    classes: 'full'
+                },
+                bold: {
+                    inline: 'span',
+                    'classes': 'bold'
+                },
+                italic: {
+                    inline: 'span',
+                    'classes': 'italic'
+                },
+                underline: {
+                    inline: 'span',
+                    'classes': 'underline',
+                    exact: true
+                },
+                strikethrough: {
+                    inline: 'del'
+                },
+                forecolor: {
+                    inline: 'span',
+                    classes: 'forecolor',
+                    styles: {
+                        color: '%value'
+                    }
+                },
+                hilitecolor: {
+                    inline: 'span',
+                    classes: 'hilitecolor',
+                    styles: {
+                        backgroundColor: '%value'
+                    }
+                },
+                custom_format: {
+                    block: 'h1',
+                    attributes: {
+                        title: 'Header'
+                    },
+                    styles: {
+                        color: 'red'
+                    }
+                }
+            }
+        });
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900" rel="stylesheet">
+    <style>
+        .mce-notification-inner {
+            display: none !important
+        }
+
+        .settingslist {
+            margin-top: 30px;
+            min-height: 550px;
+        }
+
+        .settingslist li {
+            padding: 7px 25px;
+            border-bottom: 1px dotted #999;
+            margin-bottom: 5px !important;
+        }
+
+        .settingslist li.activeli {
+            background: #3ec8fc
+        }
+
+        .settingsarea {
+            background: #fff;
+            padding: 30px;
+            min-height: 558px;
+        }
+
+        .settingsarea .row {
+            padding-bottom: 10px;
+        }
+    </style>
+</body>
+
+</html>

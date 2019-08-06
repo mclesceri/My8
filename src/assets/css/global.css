@@ -1,0 +1,79 @@
+.my8-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  z-index: 100 !important;
+  border-bottom: solid 1px #eeeeee;
+}
+.logo{
+  width:60px;
+  height:auto;
+  float:left;
+  margin-left:30px;
+  margin-top:15px;
+}
+.auth-button{
+  float: right;
+  margin-right:15px;
+  margin-top:10px;
+}
+.auth-right{
+  float: right;
+  margin-right: 30px;
+}
+.auth-bg-wrapper{
+  padding: 0;
+  border: solid 1px #eeeeee;
+  border-radius: 3px;
+  height: 530px;
+  overflow: hidden;
+  box-shadow: 0 2px 7px rgba(0,0,0,.15);
+}
+.auth-image {
+  padding: 0;
+  float: left;
+  height: 530px;
+  background: url(../../images/register.jpg);
+  background-size: cover;
+}
+.form-auth{
+  text-align: left;
+  padding: 20px 50px;
+}
+.txt-lead{
+  font-size: 16px;
+  float: left;
+}
+.form-auth .txt-lead{
+  margin-bottom: 20px;
+}
+@media(max-width:767px) {
+  .auth-image{
+    display: none;
+  }
+}
+.home{
+  padding-top: 50px;
+}
+.home-wall-left{
+  min-height: calc(100vh - 50px);
+  border-right: solid 1px #eee;
+}
+.home-wall-right{
+  min-height: calc(100vh - 50px);
+  border-left: solid 1px #eee;
+  float: right;
+}
+.ivu-switch-large.ivu-switch-checked:after{
+  left: 80px !important;
+}
+.ivu-switch-checked:before{
+  left: 82px !important;
+}
+.ivu-btn-primary span {
+  color: #fff !important;
+}
